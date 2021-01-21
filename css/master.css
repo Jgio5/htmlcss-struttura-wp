@@ -4,72 +4,44 @@
   box-sizing: border-box;
 }
 
-body{
-  font-family: 'Roboto', sans-serif;
+.clearfix::after{
+  content: '';
+  display: table;
+  clear:both;
 }
 
 .container{
-  padding: 0 20%;
+  width: 80%;
+  margin: 0 auto;
 }
 /* header */
-.header_logo_menu{
-  position: relative;
-  height: 11vh;
+header{
+  height: 40vh;
+  margin-bottom: 1vh;
+  border: 1px solid black;
+}
+
+.logo_menu{
+  height: 40%;
   width: 100%;
-  margin-bottom: 2vh;
+  background: pink;
 }
-
-.header_logo_menu > img{
-  height: 7vh;
-  width: 13vh;
-  padding: 1vh;
-}
-
-.header_logo_menu .menu{
-  position: absolute;
-  bottom: 0;
-  height: 4vh;
-  width: 100%;
-}
-
-.menu li{
-  list-style-type: none;
-  display: inline-block;
-  text-transform: uppercase;
-  margin-right: 2vh;
-}
-.menu a{
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: bold;
-  color: grey;
-}
-
 .header_photo_box{
-  position: relative;
-  height: 48vh;
+  height: 60%;
   width: 100%;
-  margin-bottom: 2vh;
-  background-image: url("../img/banner.jpg");
-  background-position: center;
-  background-size: auto;
-  border-radius: 10px;
-  filter: brightness(75%);
-}
-.text_photo_box{
-  position: absolute;
-  left: 5%;
-  bottom: 10%;
-  width: 60vh;
-  color: white;
+  background-color: orange;
 }
 /* / header */
 
 /* main */
-.main_container{
+main{
   width: 100%;
-  height: 65vh;
+  background-color: lightblue;
   margin-bottom: 1vh;
+}
+
+.col{
+  background-color: blue;
 }
 
 .top_box{
@@ -77,13 +49,7 @@ body{
   width: 100%;
   margin-bottom: 1vh;
   border-radius: 5px;
-}
-.title_article > h1{
-  font-size: 40px;
-  font-weight: bold;
-}
-.title_article > p{
-  font-size: 15px;
+  background-color: blue;
 }
 
 .box_left,
@@ -93,7 +59,6 @@ body{
   width: 20%;
   border-radius: 5px;
 }
-
 .box_middle{
   float: left;
   height: 50vh;
@@ -102,27 +67,11 @@ body{
   border-radius: 5px;
 }
 
-.main_container img{
-  width: 100%;
-  height: 25vh;
-  background-position: center;
-  background-size: cover;
-  border-radius: 10px;
-  filter: brightness(75%);
-}
-.main_container h1{
-  font-size: 2vh;
-}
-
 /* footer */
 footer{
-  text-align: center;
+  margin-top: 1vh;
   height: 5vh;
   width: 100%;
-}
-.close:after{
-  content:"\2665";
-  color: red;
-  font-size: 25px;
+  background-color: purple;
 }
 /* / footer */
