@@ -5,66 +5,124 @@
 }
 
 body{
-  padding: 0 25%;
-}
-
-body::after{
-  content: '';
-  display: table;
-  clear: both;
-}
-
-header{
-  height: 10vh;
-  width: 100%;
-  margin-bottom: 2vh;
-  background-color: pink;
-}
-
-.box_yellow{
-  height: 28vh;
-  width: 100%;
-  margin-bottom: 2vh;
-  background-color: yellow;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container{
-  width: 100%;
-  height: 48vh;
-  margin-bottom: 1vh;
-  background-color: rgb(104, 131, 247);
+  padding: 0 20%;
 }
-.container::after{
-  content: '';
-  display: table;
-  clear: both;
+/* header */
+.header_logo_menu{
+  position: relative;
+  height: 11vh;
+  width: 100%;
+  margin-bottom: 2vh;
+}
+
+.header_logo_menu > img{
+  height: 7vh;
+  width: 13vh;
+  padding: 1vh;
+}
+
+.header_logo_menu .menu{
+  position: absolute;
+  bottom: 0;
+  height: 4vh;
+  width: 100%;
+}
+
+.menu li{
+  list-style-type: none;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 2vh;
+}
+.menu a{
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: grey;
+}
+
+.header_photo_box{
+  position: relative;
+  height: 48vh;
+  width: 100%;
+  margin-bottom: 2vh;
+  background-image: url("../img/banner.jpg");
+  background-position: center;
+  background-size: auto;
+  border-radius: 10px;
+  filter: brightness(75%);
+}
+.text_photo_box{
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  width: 60vh;
+  color: white;
+}
+/* / header */
+
+/* main */
+.main_container{
+  width: 100%;
+  height: 65vh;
+  margin-bottom: 1vh;
 }
 
 .top_box{
-  height: 8vh;
+  height: 10vh;
   width: 100%;
   margin-bottom: 1vh;
-  background-color: lightblue;
+  border-radius: 5px;
+}
+.title_article > h1{
+  font-size: 40px;
+  font-weight: bold;
+}
+.title_article > p{
+  font-size: 15px;
 }
 
 .box_left,
 .box_right{
   float:left;
-  height: 38vh;
+  height: 50vh;
   width: 20%;
-  background-color: lightblue;
+  border-radius: 5px;
 }
 
 .box_middle{
   float: left;
-  height: 38vh;
+  height: 50vh;
   width: 56%;
   margin: 0 2%;
-  background-color: lightblue;
+  border-radius: 5px;
 }
 
-footer{
-  height: 7vh;
+.main_container img{
   width: 100%;
-  background-color: purple;
+  height: 25vh;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  filter: brightness(75%);
 }
+.main_container h1{
+  font-size: 2vh;
+}
+
+/* footer */
+footer{
+  text-align: center;
+  height: 5vh;
+  width: 100%;
+}
+.close:after{
+  content:"\2665";
+  color: red;
+  font-size: 25px;
+}
+/* / footer */
